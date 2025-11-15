@@ -1,34 +1,35 @@
-# Encrypted backups
+# ============================
+# NixOS Toolkit – .gitignore
+# ============================
+
+# Encrypted backups & sensitive files
 *.aes
 *.enc
 *.gpg
 *.key
 *.secret
 
-
-# Archives & temporary files
+# Temporary & editor files
 *.tmp
 *.bak
 *.swp
 *.lock
 *.part
 *.old
-
+*~
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
-logs/*
+logs/
 
+# Archives
+*.tar
+*.tar.gz
+*.tar.xz
+*.zip
 
-# macOS
-.DS_Store
-
-
-# Editors
-*~
-*.kate-swp
-*.katepart
-
-
-# System
-Thumbs.db
+# Build artifacts 
+build/
+dist/
