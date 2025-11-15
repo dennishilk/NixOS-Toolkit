@@ -1,0 +1,11 @@
+=== NixOS Restore Tool ===
+Decrypting backup...
+Password required.
+
+
+[✔] AES-256 decryption ok
+[✔] Archive integrity verified
+[✔] Restoring files
+
+
+Restore completed successfully.
