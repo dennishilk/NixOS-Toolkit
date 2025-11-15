@@ -1,6 +1,12 @@
 # ❄️ NixOS-Toolkit
 
-**English + Deutsch – Complete Toolkit Repository**
+![Toolkit](https://img.shields.io/badge/NixOS-Toolkit-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Scripts](https://img.shields.io/badge/Scripts-4-orange?style=for-the-badge)
+![AES256](https://img.shields.io/badge/Encryption-AES--256-red?style=for-the-badge)
+![NixOS](https://img.shields.io/badge/OS-NixOS-blue?style=for-the-badge)
+
 
 ---
 
@@ -15,7 +21,7 @@ This repository contains **four standalone tools**, perfectly organized but grou
 * `nixos-restore.sh` – Restore encrypted backups
 * `pin-system.sh` – Pin & protect stable generations
 
-Designed and maintained by **Dennis Hilk**.
+Designed and maintained by **Dennis Hilk (Nebunix)**.
 
 ---
 
@@ -142,7 +148,7 @@ Sichert Systemgenerationen:
 ### 🇬🇧 English
 
 ```
-git clone https://github.com/<youruser>/NixOS-Toolkit.git
+git clone https://github.com/dennishilk/NixOS-Toolkit.git
 cd NixOS-Toolkit
 chmod +x **/*.sh
 ```
@@ -150,7 +156,7 @@ chmod +x **/*.sh
 ### 🇩🇪 Deutsch
 
 ```
-git clone https://github.com/<deinuser>/NixOS-Toolkit.git
+git clone https://github.com/dennishilk/NixOS-Toolkit.git
 cd NixOS-Toolkit
 chmod +x **/*.sh
 ```
@@ -161,5 +167,6 @@ chmod +x **/*.sh
 
 Available in the `docs/` directory.
 
+---
 
-
+# 📄 License (MIT)
