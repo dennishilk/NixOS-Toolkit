@@ -1,0 +1,11 @@
+=== NixOS Backup Tool ===
+Starting encrypted backup...
+
+
+[✔] Collecting system data
+[✔] Compressing backup
+[✔] Encrypting with AES-256
+
+
+Backup complete!
+Saved as: backup-2025-11-14.tar.gz.aes
