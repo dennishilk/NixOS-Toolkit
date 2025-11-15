@@ -3,7 +3,6 @@
 ![Toolkit](https://img.shields.io/badge/NixOS-Toolkit-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Scripts](https://img.shields.io/badge/Scripts-4-orange?style=for-the-badge)
 ![AES256](https://img.shields.io/badge/Encryption-AES--256-red?style=for-the-badge)
 ![NixOS](https://img.shields.io/badge/OS-NixOS-blue?style=for-the-badge)
 
