@@ -1,6 +1,6 @@
 # ❄️ NixOS-Toolkit
 
-**English + Deutsch – Complete Toolkit Repository Template**
+**English + Deutsch – Complete Toolkit Repository**
 
 ---
 
@@ -15,7 +15,7 @@ This repository contains **four standalone tools**, perfectly organized but grou
 * `nixos-restore.sh` – Restore encrypted backups
 * `pin-system.sh` – Pin & protect stable generations
 
-Designed and maintained by **Dennis Hilk (Nebunix)**.
+Designed and maintained by **Dennis Hilk**.
 
 ---
 
