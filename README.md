@@ -6,21 +6,21 @@
 ![AES256](https://img.shields.io/badge/Encryption-AES--256-red?style=for-the-badge)
 ![NixOS](https://img.shields.io/badge/OS-NixOS-blue?style=for-the-badge)
 
-
 ---
 
 # 🚀 Overview / Überblick
 
-**NixOS-Toolkit** is a collection of powerful shell tools for maintaining, backing up, restoring, and securing NixOS systems.
+**NixOS-Toolkit** is a collection of powerful shell tools for maintaining, upgrading, backing up, restoring, and securing NixOS systems.
 
-This repository contains **four standalone tools**, perfectly organized but grouped into one professional toolkit:
+This repository contains **five standalone tools**, perfectly organized but grouped into one professional toolkit:
 
-* `nixos-maintain.sh` – System maintenance
-* `nixos-backup.sh` – Encrypted system backups
-* `nixos-restore.sh` – Restore encrypted backups
-* `pin-system.sh` – Pin & protect stable generations
+* `nixos-maintain.sh` – System maintenance  
+* `nixos-upgrade.sh` – Safe system upgrades (Kernel, NVIDIA, Nixpkgs)  
+* `nixos-backup.sh` – Encrypted system backups  
+* `nixos-restore.sh` – Restore encrypted backups  
+* `pin-system.sh` – Pin & protect stable generations  
 
-Designed and maintained by **Dennis Hilk (Nebunix)**.
+Designed and maintained by **Dennis Hilk**.
 
 ---
 
@@ -29,7 +29,8 @@ Designed and maintained by **Dennis Hilk (Nebunix)**.
 ```
 NixOS-Toolkit/
 ├── maintenance/
-│   └── nixos-maintain.sh
+│ ├── nixos-maintain.sh
+│ └── nixos-upgrade.sh
 │
 ├── backup/
 │   ├── nixos-backup.sh
@@ -64,83 +65,105 @@ NixOS-Toolkit/
 
 Automates system maintenance:
 
-* Update channels
-* System upgrade
-* Remove old generations
-* Garbage collection
-* Optimize Nix store
-* Journal cleanup
-* Bootloader rebuild
+* Update channels  
+* Remove old generations  
+* Garbage collection  
+* Optimize Nix store  
+* Journal cleanup  
+* Bootloader rebuild  
 
 ### 🇩🇪 Deutsch
 
 Automatisiert die Systempflege:
 
-* Channels aktualisieren
-* System upgraden
-* Alte Generationen löschen
-* Garbage Collection
-* Nix Store optimieren
-* Journal bereinigen
-* Bootloader aktualisieren
+* Channels aktualisieren  
+* Alte Generationen löschen  
+* Garbage Collection  
+* Nix Store optimieren  
+* Journal bereinigen  
+* Bootloader aktualisieren  
 
 ---
 
-## 🔐 2. nixos-backup.sh
+## ⚡ 2. nixos-upgrade.sh
+
+### 🇬🇧 English
+
+Performs a **safe full upgrade** including:
+
+* Update Nixpkgs (`--upgrade`)  
+* Rebuild system  
+* Pull new kernel, NVIDIA drivers, firmware  
+* Garbage collect old generations  
+* Optional reboot prompt  
+* Logging  
+
+### 🇩🇪 Deutsch
+
+Führt ein **sicheres Komplett-Upgrade** durch:
+
+* Channels + Nixpkgs aktualisieren (`--upgrade`)  
+* System-Neubau  
+* Kernel-, NVIDIA- und Paket-Updates  
+* Alte Generationen löschen  
+* Optionale Neustart-Abfrage  
+* Log-Ausgabe  
+
+---
+
+## 🔐 3. nixos-backup.sh
 
 ### 🇬🇧 English
 
 Create encrypted AES-256 backups including:
 
-* `/etc/nixos`
-* `$HOME/.config`
-* Custom include paths
+* `/etc/nixos`  
+* `$HOME/.config`  
+* Custom include paths  
 
 ### 🇩🇪 Deutsch
 
 Erstellt AES-256 verschlüsselte Backups von:
 
-* `/etc/nixos`
-* `$HOME/.config`
-* Benutzerdefinierten Pfaden
+* `/etc/nixos`  
+* `$HOME/.config`  
+* Benutzerdefinierten Pfaden  
 
 ---
 
-## 📦 3. nixos-restore.sh
+## 📦 4. nixos-restore.sh
 
 ### 🇬🇧 English
 
-* Restore encrypted backups
-* Safety checks
-* Dry-run support
+* Restore encrypted backups  
+* Safety checks  
+* Dry-run support  
 
 ### 🇩🇪 Deutsch
 
-* Wiederherstellung verschlüsselter Backups
-* Sicherheitsprüfungen
-* Dry-Run Unterstützung
+* Wiederherstellung verschlüsselter Backups  
+* Sicherheitsprüfungen  
+* Dry-Run Unterstützung  
 
 ---
 
-## 📌 4. pin-system.sh
+## 📌 5. pin-system.sh
 
 ### 🇬🇧 English
 
 Safely pin system generations:
 
-* Stable fallback
-* Emergency rollback
-* Pinned profile creation
+* Stable fallback  
+* Emergency rollback  
+* Pinned profile creation  
 
 ### 🇩🇪 Deutsch
 
 Sichert Systemgenerationen:
 
-* Stabile Fallbacks
-* Notfall-Rollbacks
-* Pinned Profile
-
----
+* Stabile Fallbacks  
+* Notfall-Rollbacks  
+* Pinned Profile  
 
 # ⚙️ Installation
 
